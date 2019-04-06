@@ -1,0 +1,26 @@
+body {
+    background: url('../images/6140.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body .card {
+    margin-top: 100px;
+    border-color: white;
+    opacity: .8;
+}
+
+.card h1 {
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    opacity: .9;
+}
+
+.card #startButton {
+    padding: 30px 60px 30px 60px;
+    margin-left: 40%;
+    margin-top: 20%;
+    
+}
