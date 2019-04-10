@@ -98,7 +98,9 @@ $(document).ready(function(){
         for(var i = 0; i < questionArray.length; i++) {
 
             var question = questionArray[i].question;
+            $('#questions-div').append("<br>");
             $('#questions-div').append(question);
+            $('#questions-div').append("<br>");
             console.log(question);
 
             for(var j = 0; j <= 3; j++){
@@ -106,9 +108,10 @@ $(document).ready(function(){
                 var choice = questionArray[i].answerChoices[j];
                 console.log(choice);
 
-                var userSelection = $('<div>');
+                var userSelection = $('<button>');
                 userSelection.addClass('answerChoice');
                 userSelection.append(choice);
+                
 
                 userSelection.attr('guess-value', j);
                 $('#questions-div').append(userSelection);
@@ -117,9 +120,13 @@ $(document).ready(function(){
         }
     }
 
-    $('document.body .answerChoice').on('click', function(){
-        $(this).style.backgroundColor = "green";
-        guess = parseInt($(this).attr('guess-value'));
+    $(document).on('click', '.answerChoice', function(){
+
+        
+        var selected = $('.answerChoice').html();
+        console.log("you selected: " + selected);
+        //$('.answerChoice').style.backgroundColor = "green";
+        guess = parseInt($('.answerChoice').attr('guess-value'));
         console.log(guess);
         if(guess === questionArray.correctAnswer) {
             correct++;
