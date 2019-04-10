@@ -4,23 +4,41 @@ body {
     background-repeat: repeat;
     font-family: 'Montserrat', sans-serif;
 }
-
-body .card {
-    margin-top: 100px;
-    border-color: white;
-    opacity: .8;
-}
-
-.card h1 {
-    font-size: 70px;
-    text-align: center;
-    color: white;
+.container {
+    background: lightskyblue;
     opacity: .9;
 }
+.container h1 {
+    margin-top: 150px;
+    color: white;
+    font-weight: bolder;
+}
 
-.card #startButton {
-    padding: 30px 60px 30px 60px;
-    margin-left: 40%;
-    margin-top: 20%;
-    
+.container #start {
+    margin-top: 200px;
+    padding: 40px 60px;
+}
+
+
+#questions-div {
+    text-align: center;
+    font-weight:  bold;
+    color: white;
+}
+
+#remaining-time {
+    height: 50px;
+    color: white;
+    font-weight: bolder;
+}
+
+.answerChoice {
+    border: 1px solid black;
+  border-radius: 5%;
+	width: 40%;
+	color: black;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 20px;
+  background-color: white;
 }

@@ -12,14 +12,18 @@
     <title>Trivia Game</title>
 </head>
 <body>
-    <div class="container">
-        <div class="card bg-dark text-white">
-            <img class="card-img" src="../TriviaGame/assets/images/solid.jpg" alt="Card image">
-            <div class="card-img-overlay" id="card-content">
-              <h1 class="card-title">Trivia Game</h1>
-              <button class="btn btn-danger" id="startButton">START</button>
-            </div>
-          </div>
+    <div class="container text-center">
+      <h1>Animal Trivia Game!</h1>
+      <!--Divs to display time, questions and answers-->
+      <div id="remaining-time"><h3></h3></div>
+      <div id="questions-div"></div>
+      <div id="answers-div"></div>
+
+      <!-- Buttons to Start and Done and Play Again-->
+      <button class="btn btn-primary" id="start">Start</button>
+      <button class="btn btn-primary" id="done">Done</button>
+      <button class="btn btn-primary" id="play-again">Play Again?</button>
+        
     </div>
 </body>
 </html>
